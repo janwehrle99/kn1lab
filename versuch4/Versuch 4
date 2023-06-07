@@ -1,0 +1,41 @@
+Aufgabe 1:
+
+Der CWND Wert bleibt während der Übertragung konstant bei einem Wert von 14,1 KBytes
+
+Das liegt daran, dass die RTT im Millisekundenbereich liegt und der Wert im Sekundentakt
+ausgelesen wird.
+Die durchschnittliche Übertragung ist 0.97 MBits/s
+
+Aufgabe 2:
+
+Die durchschnittliche auslastung war wesentlich schlechter, die Übertragungsraten
+lagen bei 0.36 MBits/s, 0.34 MBits/s damit kommen sie auf eine Summe von 0.7 MBits/s
+insgesamt. Damit liegt die geteilte Übertragung ca. 28% hinter den Erwartungen zurück.
+
+Die Aufteilung der Datenrate war fair mit einem Unterschied von ca. 5%. Das lässt sich
+vertreten.
+
+Wiederholt man den Versuch mit einer TCP und einer UDP Übertragung kommen folgende Übertragungs-
+raten zustande:		(TCP: 0.09 MBits/s UDP: 0.64 MBits/s)
+Die Staukontrolle von TCP sorgt dafür das das Netzt nicht überlastet wird, indem es die Daten-
+rate anpasst. Da UDP keine Staukontrolle hat beansprucht das Protokoll die Leitung
+ungehemmt für sich.
+
+Aufgabe 3:
+
+Im Vergleich zur Aufgabe 1.1 schwankt der Wert von CWND stark (5 KBytes - 49 KBytes)
+Der Grund dafür ist, dass die CWND nach einem Paketverlust halbiert wird. Je nachdem wie oft
+der Paketverlust pro Sekunde vorkommt kann der CWND Durchschnittswert stark variieren.
+
+Der Graph von 1.2 verläuft relativ konstant bei 900KBits/s. Im Gegensatz dazu erkennt man bei
+m Graphen von Aufgabe 3.2 einige Abfälle in der Datenrate.
+
+Bei einer Anhäufung von Paketverlusten drosselt sich die Übertragungsrate was zu den Downs im
+Graph führt.
+
+Aufgabe 4:
+
+
+
+
+
